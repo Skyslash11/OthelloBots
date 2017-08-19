@@ -1,0 +1,1512 @@
+cscope 15 $HOME/AI/A2/Desdemona/bots               0000007676
+	@MyBot/MyBot.cpp
+
+8 
+	~"Oth–lo.h
+"
+
+9 
+	~"Oth–loBßrd.h
+"
+
+10 
+	~"Oth–loPÏy”.h
+"
+
+11 
+	~<c¡dlib
+>
+
+12 
+usšg
+ 
+Çme¥aû
+ 
+	g¡d
+;
+
+13 
+usšg
+ 
+Çme¥aû
+ 
+	gDesdemÚa
+;
+
+15 þas 
+	cMyBÙ
+: 
+public
+ 
+Oth–loPÏy”
+
+
+17 
+public
+:
+
+23 
+MyBÙ
+Ð
+Tuº
+ 
+tuº
+ );
+
+24 
+ev®u©iÚ_funùiÚ
+(cÚ¡ 
+Oth–loBßrd
+& 
+´e£Á_bßrd
+,
+Tuº
+ 
+mytuº
+,Tuº 
+bÙtuº
+);
+
+29 
+vœtu®
+ 
+Move
+ 
+¶ay
+ÐcÚ¡ 
+Oth–loBßrd
+& 
+bßrd
+ );
+
+30 
+	m´iv©e
+:
+
+33 
+	gMyBÙ
+::
+	$MyBÙ
+Ð
+Tuº
+ 
+tuº
+ )
+
+34 : 
+	$Oth–loPÏy”
+Ð
+tuº
+ )
+
+36 
+	}
+}
+
+38 
+MyBÙ
+:: 
+	$ev®u©iÚ_funùiÚ
+(cÚ¡ 
+Oth–loBßrd
+& 
+´e£Á_bßrd
+,
+Tuº
+ 
+mytuº
+,Tuº 
+bÙtuº
+)
+
+40 
+Coš
+ 
+‹mp_bßrd
+[8][8];
+
+41 
+Tuº
+ 
+my_cÞÜ
+=
+BLACK
+;
+
+42 
+i
+,
+j
+;
+
+43 
+i
+=0;i<8;++i)
+
+45 
+j
+=0;j<8;++j)
+
+46 
+‹mp_bßrd
+[
+i
+][i]=
+´e£Á_bßrd
+.
+bßrd
+[i][
+j
+];
+
+48 
+x
+,
+y
+,
+my_cošs
+=0,
+bÙ_cošs
+=0,
+my_äÚt_cošs
+=0,
+bÙ_äÚt_cošs
+=0,
+my_cÜÃr_cošs
+=0,
+bÙ_cÜÃr_cošs
+=0;
+
+49 
+X
+[8]={-1, -1, 0, 1, 1, 1, 0, -1};
+
+50 
+Y
+[8]={0, 1, 1, 1, 0, -1, -1, -1};
+
+51 
+HEF
+[8][8];
+
+52 
+HEF
+[0] = {20, -3, 11, 8, 8, 11, -3, 20};
+
+53 
+HEF
+[1] = {-3, -7, -4, 1, 1, -4, -7, -3};
+
+54 
+HEF
+[2] = {11, -4, 2, 2, 2, 2, -4, 11};
+
+55 
+HEF
+[3] = {8, 1, 2, -3, -3, 2, 1, 8};
+
+56 
+HEF
+[4] = {8, 1, 2, -3, -3, 2, 1, 8};
+
+57 
+HEF
+[5] = {11, -4, 2, 2, 2, 2, -4, 11};
+
+58 
+HEF
+[6] = {-3, -7, -4, 1, 1, -4, -7, -3};
+
+59 
+HEF
+[7] = {20, -3, 11, 8, 8, 11, -3, 20};
+
+60 
+¡abž™y_çùÜ
+=0,
+·r™y
+=0,
+äÚt_¡abž™y
+=0,
+cÜÃr_occu·ncy
+=0,
+cÜÃr_þo£Ãss
+=0,
+mobž™y
+=0;
+
+61 
+evf_v®ue
+;
+
+62 
+i
+=0;i<8;++i)
+
+64 
+j
+=0;j<8;++j)
+
+66 if(
+‹mp_bßrd
+[
+i
+][i]==
+mytuº
+)
+
+68 
+¡abž™y_çùÜ
++=
+HEF
+[
+i
+][
+j
+];
+
+69 ++
+my_cošs
+;
+
+71 if(
+‹mp_bßrd
+[
+i
+][i]==
+bÙtuº
+)
+
+73 
+¡abž™y_çùÜ
+-=
+HEF
+[
+i
+][
+j
+];
+
+74 ++
+bÙ_cošs
+;
+
+76 if(
+‹mp_bßrd
+[
+i
+][
+j
+]==
+EMPTY
+)
+
+78 
+k
+=0; k<8; k++) {
+
+79 
+x
+ = 
+i
+ + 
+X
+[
+k
+]; 
+y
+ = 
+j
+ + 
+Y
+[k];
+
+80 if(
+x
+ >ð0 && x < 8 && 
+y
+ >ð0 && y < 8 && 
+‹mp_bßrd
+[x][y] =ð
+EMPTY
+)
+
+82 if(
+‹mp_bßrd
+[
+i
+][
+j
+] =ð
+my_cÞÜ
+)
+
+83 
+my_äÚt_cošs
+++;
+
+85 
+bÙ_äÚt_cošs
+++;
+
+92 
+tÙ®_cošs
+,
+tÙ®_äÚt_cošs
+;
+
+93 
+tÙ®_cošs
+=
+my_cošs
++
+bÙ_cošs
+;
+
+94 
+tÙ®_äÚt_cošs
+=
+my_äÚt_cošs
++
+bÙ_äÚt_cošs
+;
+
+95 if(
+tÙ®_cošs
+!=0)
+
+97 
+·r™y
+ = (100.0 * (
+my_cošs
+-
+bÙ_cošs
+))/(
+tÙ®_cošs
+);
+
+100 
+·r™y
+ = 0;
+
+102 if(
+tÙ®_äÚt_cošs
+!=0)
+
+104 
+äÚt_¡abž™y
+ = (100.0 * (
+bÙ_äÚt_cošs
+-
+my_äÚt_cošs
+))/(
+tÙ®_äÚt_cošs
+);
+
+107 
+äÚt_¡abž™y
+ = 0;
+
+110 if(
+‹mp_bßrd
+[0][0] =ð
+mytuº
+è
+my_cÜÃr_cošs
+++;
+
+111 if(
+‹mp_bßrd
+[0][0] =ð
+bÙtuº
+è
+bÙ_cÜÃr_cošs
+++;
+
+112 if(
+‹mp_bßrd
+[0][7] =ð
+mytuº
+è
+my_cÜÃr_cošs
+++;
+
+113 if(
+‹mp_bßrd
+[0][7] =ð
+bÙtuº
+è
+bÙ_cÜÃr_cošs
+++;
+
+114 if(
+‹mp_bßrd
+[7][0] =ð
+mytuº
+è
+my_cÜÃr_cošs
+++;
+
+115 if(
+‹mp_bßrd
+[7][0] =ð
+bÙtuº
+è
+bÙ_cÜÃr_cošs
+++;
+
+116 if(
+‹mp_bßrd
+[7][7] =ð
+mytuº
+è
+my_cÜÃr_cošs
+++;
+
+117 if(
+‹mp_bßrd
+[7][7] =ð
+bÙtuº
+è
+bÙ_cÜÃr_cošs
+++;
+
+118 
+cÜÃr_occu·ncy
+ = 25 * (
+my_cÜÃr_cošs
+ - 
+bÙ_cÜÃr_cošs
+);
+
+121 
+my_cošs
+ = 
+bÙ_cošs
+ = 0;
+
+122 if(
+‹mp_bßrd
+[0][0] =ð
+EMPTY
+)
+
+124 if(
+‹mp_bßrd
+[0][1] =ð
+mytuº
+è
+my_cošs
+++;
+
+125 if(
+‹mp_bßrd
+[0][1] =ð
+bÙtuº
+è
+bÙ_cošs
+++;
+
+126 if(
+‹mp_bßrd
+[1][1] =ð
+mytuº
+è
+my_cošs
+++;
+
+127 if(
+‹mp_bßrd
+[1][1] =ð
+bÙtuº
+è
+bÙ_cošs
+++;
+
+128 if(
+‹mp_bßrd
+[1][0] =ð
+mytuº
+è
+my_cošs
+++;
+
+129 if(
+‹mp_bßrd
+[1][0] =ð
+bÙtuº
+è
+bÙ_cošs
+++;
+
+132 if(
+‹mp_bßrd
+[0][7] == '-')
+
+134 if(
+‹mp_bßrd
+[0][6] =ð
+mytuº
+è
+my_cošs
+++;
+
+135 if(
+‹mp_bßrd
+[0][6] =ð
+bÙtuº
+è
+bÙ_cošs
+++;
+
+136 if(
+‹mp_bßrd
+[1][6] =ð
+mytuº
+è
+my_cošs
+++;
+
+137 if(
+‹mp_bßrd
+[1][6] =ð
+bÙtuº
+è
+bÙ_cošs
+++;
+
+138 if(
+‹mp_bßrd
+[1][7] =ð
+mytuº
+è
+my_cošs
+++;
+
+139 if(
+‹mp_bßrd
+[1][7] =ð
+bÙtuº
+è
+bÙ_cošs
+++;
+
+142 if(
+‹mp_bßrd
+[7][0] == '-')
+
+144 if(
+‹mp_bßrd
+[7][1] =ð
+mytuº
+è
+my_cošs
+++;
+
+145 if(
+‹mp_bßrd
+[7][1] =ð
+bÙtuº
+è
+bÙ_cošs
+++;
+
+146 if(
+‹mp_bßrd
+[6][1] =ð
+mytuº
+è
+my_cošs
+++;
+
+147 if(
+‹mp_bßrd
+[6][1] =ð
+bÙtuº
+è
+bÙ_cošs
+++;
+
+148 if(
+‹mp_bßrd
+[6][0] =ð
+mytuº
+è
+my_cošs
+++;
+
+149 if(
+‹mp_bßrd
+[6][0] =ð
+bÙtuº
+è
+bÙ_cošs
+++;
+
+151 if(
+‹mp_bßrd
+[7][7] == '-')
+
+153 if(
+‹mp_bßrd
+[6][7] =ð
+mytuº
+è
+my_cošs
+++;
+
+154 if(
+‹mp_bßrd
+[6][7] =ð
+bÙtuº
+è
+bÙ_cošs
+++;
+
+155 if(
+‹mp_bßrd
+[6][6] =ð
+mytuº
+è
+my_cošs
+++;
+
+156 if(
+‹mp_bßrd
+[6][6] =ð
+bÙtuº
+è
+bÙ_cošs
+++;
+
+157 if(
+‹mp_bßrd
+[7][6] =ð
+mytuº
+è
+my_cošs
+++;
+
+158 if(
+‹mp_bßrd
+[7][6] =ð
+bÙtuº
+è
+bÙ_cošs
+++;
+
+160 
+cÜÃr_þo£Ãss
+ = -12.5 * (
+my_cošs
+ - 
+bÙ_cošs
+);
+
+161 
+my_cošs
+=0,
+bÙ_cošs
+=0;
+
+162 
+my_cošs
+=(
+´e£Á_bßrd
+.
+	`g‘V®idMoves
+(
+mytuº
+)).
+	`size
+();
+
+163 
+bÙ_cošs
+=(
+´e£Á_bßrd
+.
+	`g‘V®idMoves
+(
+bÙtuº
+)).
+	`size
+();
+
+164 
+tÙ®_cošs
+=
+my_cošs
++
+bÙ_cošs
+;
+
+165 if(
+tÙ®_cošs
+!=0)
+
+166 
+mobž™y
+ = (100.0 * (
+my_cošs
+-
+bÙ_cošs
+))/(
+tÙ®_cošs
+);
+
+167 
+mobž™y
+ = 0;
+
+169 
+evf_v®ue
+=(10 * 
+·r™y
+è+ (801.724 * 
+cÜÃr_occu·ncy
+è+ (382.026 * 
+cÜÃr_þo£Ãss
+è+ (78.922 * 
+mobž™y
+è+ (74.396 * 
+äÚt_¡abž™y
+è+ (10 * 
+¡abž™y_çùÜ
+);
+
+171  
+evf_v®ue
+;
+
+172 
+	}
+}
+
+174 
+Move
+ 
+	gMyBÙ
+::
+	$¶ay
+ÐcÚ¡ 
+Oth–loBßrd
+& 
+bßrd
+ )
+
+176 
+li¡
+<
+Move
+> 
+moves
+ = 
+bßrd
+.
+	`g‘V®idMoves
+Ð
+tuº
+ );
+
+177 
+¿ndNo
+ = 
+	`¿nd
+(è% 
+moves
+.
+	`size
+();
+
+178 
+li¡
+<
+Move
+>::
+™”©Ü
+ 
+™
+ = 
+moves
+.
+	`begš
+();
+
+180  *
+™
+;
+
+181 
+	}
+}
+
+186 
+Oth–loPÏy”
+* 
+ü—‹BÙ
+Ð
+Tuº
+ 
+tuº
+ )
+
+188  
+Ãw
+ 
+MyBÙ
+Ð
+tuº
+ );
+
+191 
+de¡royBÙ
+Ð
+Oth–loPÏy”
+* 
+bÙ
+ )
+
+193 
+d–‘e
+ 
+bÙ
+;
+
+	@RandomBot/RandomBot.cpp
+
+8 
+	~"Oth–lo.h
+"
+
+9 
+	~"Oth–loBßrd.h
+"
+
+10 
+	~"Oth–loPÏy”.h
+"
+
+11 
+	~<c¡dlib
+>
+
+12 
+	~<ùime
+>
+
+13 
+usšg
+ 
+Çme¥aû
+ 
+	g¡d
+;
+
+14 
+usšg
+ 
+Çme¥aû
+ 
+	gDesdemÚa
+;
+
+16 þas 
+	cRªdomBÙ
+: 
+public
+ 
+Oth–loPÏy”
+
+
+18 
+public
+:
+
+22 
+RªdomBÙ
+Ð
+Tuº
+ 
+tuº
+ );
+
+23 
+	mvœtu®
+ ~
+	$RªdomBÙ
+() {}
+
+28 
+vœtu®
+ 
+Move
+ 
+	`¶ay
+ÐcÚ¡ 
+Oth–loBßrd
+& 
+bßrd
+ );
+
+29 
+´iv©e
+:
+
+30 
+	}
+};
+
+32 
+	gRªdomBÙ
+::
+	$RªdomBÙ
+Ð
+Tuº
+ 
+tuº
+ ) :
+
+33 
+	$Oth–loPÏy”
+Ð
+tuº
+ )
+
+35 
+time_t
+ 
+t
+;
+
+36 
+	`time
+Ð&
+t
+ );
+
+37 
+	`¤ªd
+Ð
+t
+ );
+
+38 
+	}
+}
+
+40 
+Move
+ 
+	gRªdomBÙ
+::
+	$¶ay
+ÐcÚ¡ 
+Oth–loBßrd
+& 
+bßrd
+ )
+
+42 
+li¡
+<
+Move
+> 
+moves
+ = 
+bßrd
+.
+	`g‘V®idMoves
+Ð
+tuº
+ );
+
+43 
+¿ndNo
+ = 
+	`¿nd
+(è% 
+moves
+.
+	`size
+();
+
+44 
+li¡
+<
+Move
+>::
+™”©Ü
+ 
+™
+ = 
+moves
+.
+	`begš
+();
+
+46 
+i
+=0; i < 
+¿ndNo
+; 
+™
+++, i++);
+
+47  *
+™
+;
+
+48 
+	}
+}
+
+53 
+Oth–loPÏy”
+* 
+ü—‹BÙ
+Ð
+Tuº
+ 
+tuº
+ )
+
+55  
+Ãw
+ 
+RªdomBÙ
+Ð
+tuº
+ );
+
+58 
+de¡royBÙ
+Ð
+Oth–loPÏy”
+* 
+bÙ
+ )
+
+60 
+d–‘e
+ 
+bÙ
+;
+
+	@SlowBot/SlowBot.cpp
+
+8 
+	~"Oth–lo.h
+"
+
+9 
+	~"Oth–loBßrd.h
+"
+
+10 
+	~"Oth–loPÏy”.h
+"
+
+11 
+	~<c¡dlib
+>
+
+12 
+	~<ùime
+>
+
+13 
+usšg
+ 
+Çme¥aû
+ 
+	g¡d
+;
+
+14 
+usšg
+ 
+Çme¥aû
+ 
+	gDesdemÚa
+;
+
+16 þas 
+	cRªdomBÙ
+: 
+public
+ 
+Oth–loPÏy”
+
+
+18 
+public
+:
+
+22 
+RªdomBÙ
+Ð
+Tuº
+ 
+tuº
+ );
+
+23 
+	mvœtu®
+ ~
+	$RªdomBÙ
+() {}
+
+28 
+vœtu®
+ 
+Move
+ 
+	`¶ay
+ÐcÚ¡ 
+Oth–loBßrd
+& 
+bßrd
+ );
+
+29 
+´iv©e
+:
+
+30 
+	}
+};
+
+32 
+	gRªdomBÙ
+::
+	$RªdomBÙ
+Ð
+Tuº
+ 
+tuº
+ ) :
+
+33 
+	$Oth–loPÏy”
+Ð
+tuº
+ )
+
+35 
+time_t
+ 
+t
+;
+
+36 
+	`time
+Ð&
+t
+ );
+
+37 
+	`¤ªd
+Ð
+t
+ );
+
+38 
+	}
+}
+
+40 
+Move
+ 
+	gRªdomBÙ
+::
+	$¶ay
+ÐcÚ¡ 
+Oth–loBßrd
+& 
+bßrd
+ )
+
+42 
+li¡
+<
+Move
+> 
+moves
+ = 
+bßrd
+.
+	`g‘V®idMoves
+Ð
+tuº
+ );
+
+43 
+¿ndNo
+ = 
+	`¿nd
+(è% 
+moves
+.
+	`size
+();
+
+44 
+li¡
+<
+Move
+>::
+™”©Ü
+ 
+™
+ = 
+moves
+.
+	`begš
+();
+
+45 
+tmp
+;
+
+47  
+i
+ = 0; i < 1000000; i++ )
+
+48  
+j
+ = 0; j < 1000; j++ )
+
+49 
+tmp
+ = 
+i
+ + 
+j
+;
+
+51 
+i
+=0; i < 
+¿ndNo
+; 
+™
+++, i++);
+
+52  *
+™
+;
+
+53 
+	}
+}
+
+58 
+Oth–loPÏy”
+* 
+ü—‹BÙ
+Ð
+Tuº
+ 
+tuº
+ )
+
+60  
+Ãw
+ 
+RªdomBÙ
+Ð
+tuº
+ );
+
+63 
+de¡royBÙ
+Ð
+Oth–loPÏy”
+* 
+bÙ
+ )
+
+65 
+d–‘e
+ 
+bÙ
+;
+
+	@TuringBot/TuringBot.cpp
+
+9 
+	~<io¡»am
+>
+
+10 
+usšg
+ 
+Çme¥aû
+ 
+	g¡d
+;
+
+12 
+	~"Oth–lo.h
+"
+
+13 
+	~"Oth–loBßrd.h
+"
+
+14 
+	~"Oth–loPÏy”.h
+"
+
+15 
+usšg
+ 
+Çme¥aû
+ 
+	gDesdemÚa
+;
+
+24 þas 
+	cTuršgBÙ
+: 
+public
+ 
+Oth–loPÏy”
+
+
+26 
+public
+:
+
+31 
+TuršgBÙ
+Ð
+Tuº
+ 
+tuº
+ );
+
+32 
+	mvœtu®
+ ~
+	$TuršgBÙ
+() {}
+
+33 
+Move
+ 
+	`¶ay
+ÐcÚ¡ 
+Oth–loBßrd
+& 
+bßrd
+ );
+
+35 
+´iv©e
+:
+
+37 
+	}
+};
+
+39 
+	gTuršgBÙ
+::
+	$TuršgBÙ
+Ð
+Tuº
+ 
+tuº
+ ):
+
+40 
+	$Oth–loPÏy”
+Ð
+tuº
+ )
+
+42 
+	}
+}
+
+44 
+Move
+ 
+TuršgBÙ
+::
+	$¶ay
+ÐcÚ¡ 
+Oth–loBßrd
+& 
+bßrd
+ )
+
+46 
+¡ršg
+ 
+move
+;
+
+47 
+cš
+ >> 
+move
+;
+
+48  
+Move
+::
+	`·r£
+Ð
+move
+ );
+
+49 
+	}
+}
+
+54 
+Oth–loPÏy”
+* 
+ü—‹BÙ
+Ð
+Tuº
+ 
+tuº
+ )
+
+56  
+Ãw
+ 
+TuršgBÙ
+Ð
+tuº
+ );
+
+59 
+de¡royBÙ
+Ð
+Oth–loPÏy”
+* 
+bÙ
+ )
+
+61 
+d–‘e
+ 
+bÙ
+;
+
+	@
+1
+.
+1
+/usr/include
+4
+84
+MyBot/MyBot.cpp
+RandomBot/RandomBot.cpp
+SlowBot/SlowBot.cpp
+TuringBot/TuringBot.cpp
